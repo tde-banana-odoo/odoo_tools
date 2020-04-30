@@ -127,3 +127,11 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# private files
+base_tools/data/configuration_data_private.xml
+base_tools/data/res_partner_data_private.xml
+base_tools/data/res_partner_data_private_12.xml
+base_tools/data/res_partner_data_private_13.xml
+mail_tools/data/configuration_data_private.xml
+sms_tools/data/configuration_data_private.xml
