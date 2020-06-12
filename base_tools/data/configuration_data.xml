@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+        <record id="mail_server_odoo" model="ir.mail_server">
+            <field name="name">smtp.openerp.com</field>
+            <field name="sequence">1</field>
+            <field name="smtp_host">smtp.openerp.com</field>
+            <field name="smtp_port">2525</field>
+            <field name="smtp_encryption">starttls</field>
+            <field name="smtp_user">dummy</field>
+            <field name="smtp_pass">dummy</field>
+        </record>
+
+<!--         <record id="mail_catchall_domain" model="ir.config_parameter">
+            <field name="key">mail.catchall.domain</field>
+            <field name="value">odoo.com</field>
+        </record> -->
+    </data>
+</odoo>

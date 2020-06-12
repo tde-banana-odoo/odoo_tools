@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo><data noupdate="0">
+
+    <record id="base.user_root" model="res.users">
+        <field name="parent_id" ref="base.main_partner"/>
+        <field name="company_ids" eval="[(4, ref('base.main_company')), (4, ref('base_tools.second_company'))]"/>
+        <field name="image_1920" type="base64" file="base_tools/static/img/people_man_user_0.jpg"/>
+        <field name="function">Über Boss</field>
+        <field name="phone">+32 987 65 43 21</field>
+        <field name="mobile">+32 987 65 43 21</field>
+        <field name="email">admin@example.com</field>
+        <field name="tz">Europe/Brussels</field>
+        <field name="title" ref="base.res_partner_title_mister"/>
+    </record>
+
+    <record id="base.user_admin" model="res.users">
+        <field name="parent_id" eval="ref('base.main_partner')"/>
+        <field name="image_1920" type="base64" file="base_tools/static/img/people_man_user_0.jpg"/>
+        <field name="function">Über Boss</field>
+        <field name="phone">+32 987 65 43 21</field>
+        <field name="mobile">+32 987 65 43 21</field>
+        <field name="email">admin@example.com</field>
+        <field name="tz">Europe/Brussels</field>
+        <field name="title" ref="base.res_partner_title_mister"/>
+    </record>
+
+</data></odoo>
