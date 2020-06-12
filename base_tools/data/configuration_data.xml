@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+        <record id="mail_server_odoo" model="ir.mail_server">
+            <field name="name">smtp.gmail.com</field>
+            <field name="sequence">1</field>
+            <field name="smtp_host">smtp.gmail.com</field>
+            <field name="smtp_port">587</field>
+            <field name="smtp_encryption">starttls</field>
+            <field name="smtp_user">dummy</field>
+            <field name="smtp_pass">dummy</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo><data noupdate="0">
+    <record id="ir_attachment_0" model="ir.attachment">
+        <field name="datas">bWlncmF0aW9uIHRlc3Q=</field>
+        <field name="store_fname">SampleDoc.doc</field>
+        <field name="name">SampleDoc.doc</field>
+    </record>
+</data>
+</odoo>

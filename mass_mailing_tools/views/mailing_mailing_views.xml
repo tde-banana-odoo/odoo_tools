@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo><data>
+
+    <record id="mailing_mailing_view_form" model="ir.ui.view">
+        <field name="name">mailing.mailing.view.form.inherit.tools</field>
+        <field name="model">mailing.mailing</field>
+        <field name="inherit_id" ref="mass_mailing.view_mail_mass_mailing_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//button[@name='action_test']" position="after">
+                <button name="action_send_statistics" type="object"
+                    class="btn-danger"
+                    string="Send KPIs"/>
+                <button name="action_unsubscribe" type="object"
+                    class="btn-danger"
+                    string="Unsubscribe"/>
+            </xpath>
+        </field>
+    </record>
+
+</data></odoo>

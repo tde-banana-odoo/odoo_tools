@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo><data noupdate="0">
+
+    <record id="iap_account_sms" model="iap.account">
+        <field name="service_id" ref="sms.iap_service_sms"/>
+        <field name="account_token">dummy</field>
+        <field name="company_ids" eval="False"/>
+    </record>
+
+</data></odoo>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+        <record id="base.main_partner" model="res.partner">
+            <field name="name">OpenWood</field>
+            <field name="street">Orval 1</field>
+            <field name="zip">6823</field>
+            <field name="city">Florenville</field>
+            <field name="country_id" ref="base.be"/>
+            <field name="phone">+32 987 65 43 21</field>
+            <field name="email">wow@example.com</field>
+            <field name="website">www.example.com</field>
+            <field name="image_1920" type="base64" file="base_tools/static/img/logo_wood.jpg"/>
+        </record>
+        <record id="base.main_company" model="res.company">
+            <field name="name">OpenWood SA</field>
+        </record>
+
+        <record id="second_company_partner" model="res.partner">
+            <field name="name">OpenBrewery Company</field>
+            <field name="is_company" eval="True"/>
+            <field name="street">271 Van Buren St</field>
+            <field name="zip">OR 97402</field>
+            <field name="city">Eugene</field>
+            <field name="state_id" ref="base.state_us_32"/>
+            <field name="country_id" ref="base.us"/>
+            <field name="phone">+1 555 11 22 33 44</field>
+            <field name="email">brewery@example.com</field>
+            <field name="website">www.example.com</field>
+            <field name="image_1920" type="base64" file="base_tools/static/img/logo_brewery.jpg"/>
+        </record>
+        <record id="second_company" model="res.company">
+            <field name="name">OpenBrewery Company</field>
+            <field name="partner_id" ref="base_tools.second_company_partner"/>
+        </record>
+    </data>
+</odoo>
