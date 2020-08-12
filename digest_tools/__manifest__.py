@@ -2,22 +2,19 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
 {
-    'name': 'SMS Tools and Helpers',
+    'name': 'Digest Tools and Helpers',
     'version': '1.0',
     'category': 'Tools',
     'complexity': 'easy',
     'description': """
     """,
     'depends': [
-        'base_tools',
         'mail_tools',
-        'sms'
+        'digest',
     ],
     'data': [
-        'data/configuration_data.xml',
-        'data/configuration_data_private.xml',  # comment if necessary
-        'data/sms_template_data.xml',
+        'views/digest_digest_views.xml',
     ],
     'installable': True,
-    'auto_install': True,
+    'auto_install': False,
 }
