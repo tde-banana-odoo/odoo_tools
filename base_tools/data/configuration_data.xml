@@ -11,9 +11,8 @@
             <field name="smtp_pass">dummy</field>
         </record>
 
-<!--         <record id="mail_catchall_domain" model="ir.config_parameter">
-            <field name="key">mail.catchall.domain</field>
-            <field name="value">odoo.com</field>
-        </record> -->
+    <function model="ir.config_parameter"
+        name="set_param"
+        eval="('mail.catchall.domain', 'odoo.example.com')"/>
     </data>
 </odoo>

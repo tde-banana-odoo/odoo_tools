@@ -6,7 +6,7 @@
         <field name="model">mailing.mailing</field>
         <field name="inherit_id" ref="mass_mailing.view_mail_mass_mailing_form"/>
         <field name="arch" type="xml">
-            <xpath expr="//button[@name='action_put_in_queue']" position="after">
+            <xpath expr="//button[@name='action_test']" position="after">
                 <button name="action_send_statistics" type="object"
                     class="btn-danger"
                     string="Send KPIs"/>
