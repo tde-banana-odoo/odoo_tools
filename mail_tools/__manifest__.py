@@ -10,7 +10,6 @@
     """,
     'depends': [
         'base_tools',
-        'fetchmail',
         'mail'
     ],
     'data': [
