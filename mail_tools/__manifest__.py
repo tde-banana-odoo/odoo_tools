@@ -18,5 +18,6 @@
         'data/configuration_data_private.xml',  # comment if necessary
     ],
     'installable': True,
+    'license': 'LGPL-3',
     'auto_install': True,
 }

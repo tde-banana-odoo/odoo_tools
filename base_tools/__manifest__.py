@@ -18,5 +18,6 @@
         'data/ir_data.xml',
     ],
     'installable': True,
+    'license': 'LGPL-3',
     'auto_install': False,
 }

@@ -16,5 +16,6 @@
         'views/digest_digest_views.xml',
     ],
     'installable': True,
+    'license': 'LGPL-3',
     'auto_install': False,
 }

@@ -19,5 +19,6 @@
         'data/sms_template_data.xml',
     ],
     'installable': True,
+    'license': 'LGPL-3',
     'auto_install': True,
 }

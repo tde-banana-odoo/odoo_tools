@@ -16,5 +16,6 @@
         'views/mailing_mailing_views.xml',
     ],
     'installable': True,
+    'license': 'LGPL-3',
     'auto_install': False,
 }
