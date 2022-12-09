@@ -29,9 +29,9 @@ class Mailing(models.Model):
                 document_id = model.search(self._parse_mailing_domain()).ids[0]
 
         params = werkzeug.urls.url_encode({
-            'document_id': document_id,
+            'res_id': document_id,
             'email': self.env.user.email_normalized,
-            'hash_token': self._generate_mailing_recipient_token(document_id, self.env.user.email_normalized),
+            'token': self._generate_mailing_recipient_token(document_id, self.env.user.email_normalized),
         })
         return {
             'type': 'ir.actions.act_url',
