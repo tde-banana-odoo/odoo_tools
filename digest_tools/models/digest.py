@@ -9,3 +9,6 @@ class Digest(models.Model):
 
     def action_send_preview(self):
         return self._action_send_to_user(self.env.user, tips_count=40, consume_tips=False)
+
+    def action_send_preview_1tip(self):
+        return self._action_send_to_user(self.env.user, tips_count=1, consume_tips=False)

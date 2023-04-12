@@ -6,10 +6,13 @@
         <field name="model">digest.digest</field>
         <field name="inherit_id" ref="digest.digest_digest_view_form"/>
         <field name="arch" type="xml">
-            <xpath expr="//button[@name='action_send']" position="after">
+            <xpath expr="//button[@name='action_send_manual']" position="after">
                 <button name="action_send_preview" type="object"
                     class="btn-danger"
                     string="Send Preview"/>
+                <button name="action_send_preview_1tip" type="object"
+                    class="btn-danger"
+                    string="Send Preview (1 tip)"/>
             </xpath>
         </field>
     </record>
