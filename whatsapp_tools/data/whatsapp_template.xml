@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo><data noupdate="1">
+
+    <record id="whatsapp_template_data_0" model="whatsapp.template">
+    	<field name="body">Hello {{1}}, this is super.</field>
+        <field name="lang_code">en</field>
+        <field name="name">Customer WA 0</field>
+        <field name="model_id" ref="base.model_res_partner"/>
+        <field name="status">approved</field>
+        <field name="template_name">customer_wa_0</field>
+        <field name="template_type">utility</field>
+        <field name="variable_ids" eval="[
+            (5, 0, 0),
+            (0, 0, {
+                'name': '{{1}}',
+                'demo_value': 'Azure Interior',
+                'line_type': 'body',
+                'field_type': 'field',
+                'field_name': 'name'
+            }),
+        ]" />
+    </record>
+
+    <record id="whatsapp_template_data_1" model="whatsapp.template">
+        <field name="body">Hello {{1}}, this is less super.</field>
+        <field name="lang_code">en</field>
+        <field name="name">Customer WA 1</field>
+        <field name="model_id" ref="base.model_res_partner"/>
+        <field name="status">approved</field>
+        <field name="template_name">customer_wa_1</field>
+        <field name="template_type">utility</field>
+        <field name="variable_ids" eval="[
+            (5, 0, 0),
+            (0, 0, {
+                'name': '{{1}}',
+                'demo_value': 'Azure Interior',
+                'line_type': 'body',
+                'field_type': 'field',
+                'field_name': 'name'
+            }),
+        ]" />
+    </record>
+</data></odoo>
